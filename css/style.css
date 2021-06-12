@@ -170,7 +170,8 @@ body {
 
 .about {
   padding: 60px 0;
-  flex-direction: row; }
+  flex-direction: row;
+  overflow-x: hidden !important; }
   .about .main-img {
     flex-basis: 70%;
     max-width: 100%;
