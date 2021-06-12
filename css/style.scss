@@ -52,6 +52,7 @@ body {
         display: none;
         @media(max-width: 991px) {
             display: block;
+            margin: 0;
         }
     }
     .navbar-nav {

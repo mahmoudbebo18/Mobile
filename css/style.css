@@ -34,7 +34,8 @@ body {
     display: none; }
     @media (max-width: 991px) {
       .navbar .navbar-brand {
-        display: block; } }
+        display: block;
+        margin: 0; } }
   .navbar .navbar-nav {
     padding: 0;
     width: 100%;
