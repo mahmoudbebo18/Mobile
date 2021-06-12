@@ -234,6 +234,7 @@ body {
         @media(max-width: 991px) {
             flex-basis: 100%;
             max-width: 100%;
+            height: 400px;
         }
         img {
             width: 100%;
@@ -261,11 +262,17 @@ body {
             h2 {
                 color: $main;
                 font-size: 28px;
+                @media(max-width: 600px) {
+                    font-size: 20px;
+                }
             }
             p {
                 font-size: 16px;
                 line-height: 1.8;
                 margin-top: 24px;
+                @media(max-width: 600px) {
+                    font-size: 13px;
+                }
             }
             @media (max-width: 767px) {
                 /*width: calc(100% - 140px);
@@ -284,6 +291,19 @@ body {
                 border-right-color: transparent;
                 border-bottom-color: transparent;
                 border-left-color: transparent;
+            }
+            @media(max-width:600px) {
+                position: absolute;
+                background: #eae8e5;
+                padding: 30px 30px;
+                text-align: center;
+                box-shadow: 0px 22px 22px -14px rgba(0, 0, 0, 11%);
+                bottom: -60px;
+                width: 90%;
+                margin: 0 auto;
+                right: 6%;
+                direction: rtl;
+                text-align: right;
             }
         }
     }
@@ -328,6 +348,9 @@ body {
             li {
                 font-size: 15px;
                 padding: 5px 0;
+                @media(max-width: 600px) {
+                    font-size: 13px;
+                }
             }
         }
     }
@@ -350,6 +373,9 @@ body {
             li {
                 font-size: 15px;
                 padding: 5px 0;
+                @media(max-width: 600px) {
+                    font-size: 13px;
+                }
             }
         }
     }
@@ -380,6 +406,11 @@ body {
         background-color: $darkBg;
         color: $mainHead;
         transition: .3s;
+        @media(max-width: 600px) {
+            font-size: 13px;
+            padding: 10px;
+            margin-top: 0;
+        }
         &:hover {
             background-color: $main;
             color: $mainHead
@@ -407,6 +438,9 @@ footer {
         h2 {
             color: #fff;
             margin-top: 16px;
+            @media(max-width: 575px) {
+                font-size: 24px;
+            }
             span {
                 color: $mainHead;
             }
@@ -428,9 +462,22 @@ footer {
         }
         .site-url {
             margin-top: 16px;
+            color: $mainHead;
             a {
                 color: $mainHead;
                 text-decoration: none;
+                @media(max-width: 390px) {
+                    font-size: 12px;
+                }
+            }
+        }
+        .download {
+            @media(max-width: 575px) {
+                height: 35px;
+                img {
+                    height: 100% !important;
+                    width: 120px !important;
+                }
             }
         }
     }
@@ -449,6 +496,7 @@ footer {
             /* bottom: -70px; */
             width: 90%;
             margin: 0 auto;
+            top: 0;
             right: 0;
             direction: rtl;
             text-align: right;
@@ -458,6 +506,10 @@ footer {
             .ser-caption {
                 font-size: 18px;
                 line-height: 28px;
+                @media(max-width: 425px) {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
             }
             h4 {
                 margin-top: 24px;
@@ -466,8 +518,18 @@ footer {
                 font-weight: bold;
             }
             .service {
+                margin-top: 25px;
+                padding: 10px;
+                box-shadow: 0 0 5px #c3c3c3;
+                border-radius: 5px;
                 h6 {
                     font-weight: bold;
+                    font-size: 18px;
+                    margin-bottom: 16px;
+                }
+                p {
+                    font-size: 14px;
+                    margin: 0
                 }
             }
         }
